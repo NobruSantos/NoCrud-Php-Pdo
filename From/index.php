@@ -15,7 +15,7 @@
     </form>
     <?php
      require('../app/DataBase.php');
-     $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+     $nome = filter_input(INPUT_POST, 'nome');
      $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
      $descricao = filter_input(INPUT_POST, 'descricao', FILTER_SANITIZE_SPECIAL_CHARS);
      if(!empty($nome) && !empty($email) && !empty($descricao)){

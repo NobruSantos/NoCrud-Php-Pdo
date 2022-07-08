@@ -2,7 +2,7 @@
 class DataBase {
     private $PDO; 
 
-    public function __construct($dbname = 'cadastro-crud-php-pdo'){ 
+    public function __construct($dbname = 'cadastro'){ 
 
         try{
             $this -> PDO = new PDO("mysql:host=localhost;dbname={$dbname}", 'root', '');
