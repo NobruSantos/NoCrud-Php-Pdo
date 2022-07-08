@@ -18,7 +18,7 @@
         echo "<div class='result'>";
         echo "Nome : {$item['nome']}<br>";
         echo "Email : {$item['email']}<br>";
-        echo "Descrição : {$item['descricao']}<br>";     
+        echo "Descrição : {$item['descricao']}<br><br>";     
         echo "</div>";      
        } 
     } else {
