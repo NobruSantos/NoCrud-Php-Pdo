@@ -5,7 +5,7 @@ class DataBase {
     public function __construct($dbname = 'cadastro'){ 
 
         try{
-            $this -> PDO = new PDO("mysql:host=localhost;dbname={$dbname}", 'root', '');
+            $this -> PDO = new PDO("mysql:host=localhost;dbname={$dbname}" , 'root', '');
            
         }catch (PDOException $e){
             die("Ops, houve um erro: <b>{$e->getMessage()} </b>");
